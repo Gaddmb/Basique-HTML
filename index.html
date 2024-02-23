@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NBA</title>
+  </head>
+  <body>
+    <!--Les balises <h1> à <h6> définissent différents niveaux de titres sur une page web, du plus important au moins important. -->
+    <h1>NBA Team</h1>
+    <!-- La balise <section> divise la page en sections distinctes pour organiser le contenu. -->
+    <section>
+      <h2>NBA Photo</h2>
+      <!-- La balise <p> est utilisée pour créer des paragraphes de texte. -->
+      <p>
+        See more
+        <!-- L'élément <a> est utilisé pour créer des liens hypertexte. -->
+        <a
+          target="_blank"
+          href="https://www.beinsports.com/fr-fr/basketball/nba/news?gr=www"
+          >NBA TEAM LOGO</a
+        >
+        in our gallery
+      </p>
+      <!-- La balise <img> est utilisée pour afficher des images sur une page web. -->
+      <img src="/img/logo-nba.jpg" alt="logo_nba" />
+    </section>
+    <section>
+      <h2>Team List</h2>
+      <h3>NBA team iconic</h3>
+      <!-- La balise <ul> est utilisée pour créer une liste non ordonnée. -->
+      <!-- La balise <li> est utilisée pour créer des éléments de liste dans une liste non ordonnée. -->
+      <ul>
+        <li>Boston Celtics</li>
+        <li>Los Angeles Lakers</li>
+        <li>CHICAGO BULLS</li>
+        <li>San Antonio Spurs</li>
+        <li>Golden State</li>
+      </ul>
+      <!-- La balise <figure> est utilisée pour encapsuler du contenu multimédia, tel qu'une image, avec une légende facultative. -->
+      <figure>
+        <img src="/img//Heat.png" alt="logo_miami_heat" />
+        <!-- La balise <figcaption> est utilisée pour fournir une légende pour le contenu encapsulé dans une balise <figure>. -->
+        <figcaption>NBA team miami heat</figcaption>
+      </figure>
+      <h3>MOST TITLE</h3>
+      <!-- La balise <li> est utilisée pour créer des éléments de liste dans une liste non ordonnée. -->
+      <ol>
+        <li>Boston Celtics 17</li>
+        <li>Los Angeles Lakers 17</li>
+        <li>CHICAGO BULLS 6</li>
+        <li>Golden State 6</li>
+        <li>San Antonio Spurs 5</li>
+      </ol>
+      <figure>
+        <img src="/img/nba_trophy.webp" alt="trophy_NBA" />
+        <figcaption>NBA TROPHY</figcaption>
+      </figure>
+    </section>
+    <br />
+    <section>NBA FORM</section>
+    <!-- La balise <form> est utilisée pour créer un formulaire interactif sur une page web. -->
+    <!-- L'attribut "action" spécifie l'URL du script de traitement du formulaire sur le serveur. -->
+    <form action="">
+      <!-- La balise <fieldset> est utilisée pour grouper des éléments de formulaire connexes. -->
+      <fieldset>
+        <!-- La balise <legend> est utilisée pour fournir une légende ou un titre à un élément de formulaire groupé avec <fieldset>. -->
+        <legend>What is your favorite Team</legend>
+        <!-- La balise <label> est utilisée pour étiqueter les éléments interactifs d'un formulaire, fournissant une description ou un libellé associé à l'élément. -->
+        <!-- La balise <input> est utilisée pour créer des champs de saisie dans un formulaire, tels que des champs de texte, des cases à cocher ou des boutons. -->
+        <!-- L'attribut "id" donne un identifiant unique à l'élément HTML. -->
+        <!-- L'attribut "type" spécifie le type de contrôle de l'élément <input>. -->
+        <!-- L'attribut "name" identifie les données côté serveur lors de la soumission du formulaire. -->
+        <!-- L'attribut "value" fournit une valeur associée à l'élément <input>. -->
+        <!--L'attribut "Checked" me permet de mettre par defaut la prémier option-->
+        <label for="Boston Celtics"
+          ><input
+            checked
+            id="Boston Celtics"
+            type="radio"
+            name="Boston Celtics-Los Angeles Lakers-San Antonio Spurs-Golden State"
+            value="Boston Celtics"
+          />Boston Celtics</label
+        >
+        <label for="Los Angeles Lakers"
+          ><input
+            id="Los Angeles Lakers"
+            type="radio"
+            name="Boston Celtics-Los Angeles Lakers-San Antonio Spurs-Golden State"
+            value="Los Angeles Lakers"
+          />Los Angeles Lakers</label
+        >
+        <label for="San Antonio Spurs"
+          ><input
+            id="San Antonio Spurs"
+            type="radio"
+            name="Boston Celtics-Los Angeles Lakers-San Antonio Spurs-Golden State"
+            value="San Antonio Spurs"
+          />San Antonio Spurs</label
+        >
+        <label for="Golden State"
+          ><input
+            id="Golden State"
+            type="radio"
+            name="Boston Celtics-Los Angeles Lakers-San Antonio Spurs-Golden State"
+            value="Los Angeles Lakers"
+          />Golden State</label
+        >
+      </fieldset>
+
+      <!-- L'attribut "for" dans une balise <label> est utilisé pour associer un libellé à un élément de formulaire spécifique en spécifiant l'ID 
+      de cet élément. Cela permet à l'utilisateur de cliquer sur le libellé pour mettre en évidence 
+      ou sélectionner l'élément de formulaire correspondant. -->
+
+      <fieldset>
+        <legend>What team have trophy</legend>
+        <input
+          value="Boston Celtics"
+          id="Boston Celtics"
+          name="Boston Celtics"
+          type="checkbox"
+        /><label for="Boston Celtics"> Boston Celtics</label>
+        <input
+          value="Los Angeles Lakers"
+          id="Los Angeles Lakers"
+          name="Los Angeles Lakers"
+          type="checkbox"
+        /><label for="Los Angeles Lakers"> Los Angeles Lakers</label>
+        <input
+          value="San Antonio Spurs"
+          id="San Antonio Spurs"
+          name="San Antonio Spurs"
+          type="checkbox"
+        /><label for="San Antonio Spurs"> San Antonio Spurs</label>
+        <input id="Golden State" name="personality" type="checkbox" /><label
+          for="Golden State"
+        >
+          Golden State</label
+        >
+        <input
+          value="Grizzlies"
+          id="Grizzlies"
+          name="Grizzlies"
+          type="checkbox"
+        /><label for="Grizzlies">Grizzlies</label>
+      </fieldset>
+      <!-- L'attribut "placeholder" dans la balise <input> est utilisé pour afficher un texte indicatif ou une suggestion à l'utilisateur sur ce qu'il doit saisir dans le champ de formulaire, sans prendre de place permanente. -->
+      <!-- L'attribut "required" dans <input> rend le champ obligatoire. -->
+      <input type="text" placeholder="Your second favorite team" required />
+      <button type="submit">submit</button>
+    </form>
+    <footer><p>NBA International Championship</p></footer>
+  </body>
+</html>
+
+<!-- En HTML, certaines balises ont un comportement inline, 
+  Les balises inline sont affichées les unes à côté des autres, 
+  exemple :<span> <a> <img> <input> <button>
+
+  tandis que d'autres ont un comportement block par défaut. 
+  Les balises block occupent toute la largeur disponible et commencent sur une nouvelle ligne.
+  exemple : <div> <p> <h1>,..., <h6> <ul>, <ol>, <li> <table>, <tr>, <td> , <form>
+<header>, <footer>, <section>, <article>
+-->
